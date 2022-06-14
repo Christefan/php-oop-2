@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/prodotto.php";
+require_once __DIR__ . "./prodotto.php";
 class Giochi extends Prodotto {
    public $descrizione;
    public $tipo;
@@ -12,7 +12,7 @@ class Giochi extends Prodotto {
     }
 
     public function getGiochi() {
-        return . 'Nome prodotto: ' . $this->nome . ' Prezzo prodotto: ' . $this->prezzo . 'Descrizione gioco: '. $this->descrizione . 'Tipo di gioco: ' . $this->tipo;
+        return 'Nome prodotto: ' . $this->nome . '</br>' . ' Prezzo prodotto: ' . $this->prezzo . '</br>' . 'Descrizione gioco: '. $this->descrizione . '</br>' .'Tipo di gioco: ' . $this->tipo;
     }
 }
 ?>

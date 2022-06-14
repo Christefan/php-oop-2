@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/prodotto.php";
+require_once __DIR__ . "./prodotto.php";
 class Cucce extends Prodotto {
    public $descrizione;
    public $tipo;
@@ -12,7 +12,7 @@ class Cucce extends Prodotto {
     }
 
     public function getCucce() {
-        return . 'Nome prodotto: ' . $this->nome . ' Prezzo prodotto: ' . $this->prezzo . 'Descrizione cucce: '. $this->descrizione . 'Tipo di cucce: ' . $this->tipo;
+        return  'Nome prodotto: ' . $this->nome . '</br>' . ' Prezzo prodotto: ' . $this->prezzo . '</br>' . 'Descrizione cucce: '. $this->descrizione . '</br>' .'Tipo di cucce: ' . $this->tipo;
     }
 }
 ?>

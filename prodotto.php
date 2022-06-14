@@ -8,7 +8,7 @@ class Prodotto {
         $this->prezzo = $_prezzo;
     }
     public function getProdotto() {
-        return . 'Nome prodotto: ' . $this->nome . ' Prezzo prodotto: ' . $this->prezzo;
+        return  'Nome prodotto: ' . $this->nome  . ' Prezzo prodotto: ' . $this->prezzo;
     }
 }
 ?>

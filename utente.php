@@ -4,7 +4,8 @@ class Utente {
 
     public $name;
     public $email;
-    
+    public $scadenza = false;
+
     public $cart = [];
 
     function __construct($_name, $_email) {
@@ -13,12 +14,8 @@ class Utente {
     }
 
     function addProductToCart($_product) {
-        if ($_product->disponibile) {
             $this->cart[] = $_product;
             return true;
-        } else {
-            return false;
-        }
     }
 
     function getTotalPrice() {

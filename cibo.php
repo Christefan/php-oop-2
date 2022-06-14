@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/prodotto.php";
+require_once __DIR__ . "./prodotto.php";
 class Cibo extends Prodotto {
    public $descrizione;
    public $tipo;
@@ -11,8 +11,8 @@ class Cibo extends Prodotto {
     $this->tipo = $_tipo;    
     }
 
-    public function getCibo() {
-        return . 'Nome prodotto: ' . $this->nome . ' Prezzo prodotto: ' . $this->prezzo . 'Descrizione cibo: '. $this->descrizione . 'Tipo di cibo: ' . $this->tipo;
+    public function getInfo() {
+        return 'Nome prodotto: ' . $this->nome . '</br>' . ' Prezzo prodotto: ' . $this->prezzo . '</br>' . 'Descrizione cibo: '. $this->descrizione . '</br>' . 'Tipo di cibo: ' . $this->tipo;
     }
 }
 ?>
