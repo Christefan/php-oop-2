@@ -11,7 +11,7 @@ class Giochi extends Prodotto {
     $this->tipo = $_tipo;    
     }
 
-    public function getGiochi() {
+    public function getInfo() {
         return 'Nome prodotto: ' . $this->nome . '</br>' . ' Prezzo prodotto: ' . $this->prezzo . '</br>' . 'Descrizione gioco: '. $this->descrizione . '</br>' .'Tipo di gioco: ' . $this->tipo;
     }
 }

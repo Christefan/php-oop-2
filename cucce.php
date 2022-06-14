@@ -11,7 +11,7 @@ class Cucce extends Prodotto {
     $this->tipo = $_tipo;    
     }
 
-    public function getCucce() {
+    public function getInfo() {
         return  'Nome prodotto: ' . $this->nome . '</br>' . ' Prezzo prodotto: ' . $this->prezzo . '</br>' . 'Descrizione cucce: '. $this->descrizione . '</br>' .'Tipo di cucce: ' . $this->tipo;
     }
 }

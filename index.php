@@ -14,10 +14,10 @@ $chris->addProductToCart($acana_cat);
 $chris->addProductToCart($acana_dog);
 $chris->scadenza = true ;
 
-$marc = new Utente("Marco","mmmmm@gmail.com");
+$marc = new Utente("Marco","");
 $marc->addProductToCart($acana_cat);
 $marc->addProductToCart($acana_dog);
-$marc->scadenza = true ;
+$marc->scadenza = false ;
 
 $paolo = new Utente("Paolo","mmmmm@gmail.com");
 $paolo->addProductToCart($acana_cat);
@@ -42,9 +42,10 @@ $arr = [$chris,$marc,$paolo];
             <?php if($user->scadenza === false) {?>
             <ul>
                 <?php foreach($user->cart as $cartItem) { ?>
-                    <li><?php echo $cartItem->getProdotto();?></li>
+                    <li><?php echo $cartItem->getInfo();?></li>
                 <?php } ?>
             </ul>
+            <h2>Totale : <?php echo $user->getTotalPrice(); ?> <h2>
             <?php } else {?>
                 <p>Carta di credito scaduta </p>
             <?php }?>
